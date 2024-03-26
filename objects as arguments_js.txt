@@ -1,0 +1,28 @@
+objects as arguments;
+
+
+class Car{
+
+    constructor(model, year, color){
+        this.model = model;
+        this.year = year;
+        this.color = color;
+    }
+}
+
+const car1 = new Car("Mustang", 1969, "Red");
+const car2 = new Car("Cadillac", 1978, "Blue");
+const car3 = new Car("Royce", 2004, "Black");
+
+changeColor(car3, "Golden")
+displayInfo(car3);
+
+function displayInfo(car){
+    console.log(car.model)
+    console.log(car.year)
+    console.log(car.color)
+}
+
+function changeColor(car, color){
+    car.color = color;
+}
